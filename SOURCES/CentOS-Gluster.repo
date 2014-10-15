@@ -1,0 +1,28 @@
+# CentOS-Gluster.repo
+#
+# Please see http://wiki.centos.org/SpecialInterestGroup/Storage for more 
+# information
+
+[gluster]
+name=CentOS-$releasever - Gluster
+baseurl=http://mirror.centos.org/centos/$releasever/gluster/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
+
+[gluster-devel]
+name=CentOS-$releasever - Gluster Devel
+baseurl=http://mirror.centos.org/centos/$releasever/gluster/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
+
+# note: the bsys repo points at just-built package, they are neither tested
+# nor signed and only meant to be a place for developers to evaluate
+# their builds
+[gluster-bsys-test]
+name=CentOS-$releasever - Gluster Testing ( BuildSys )
+baseurl=http://cbs.centos.org/repos/storage$releasever-testing/
+gpgcheck=0
+enabled=0
+
