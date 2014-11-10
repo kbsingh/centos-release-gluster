@@ -2,7 +2,7 @@ Summary: Gluster Filesystem from the CentOS Storage SIG repo configs
 Name: centos-release-gluster
 Epoch: 10
 Version: 1
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPL
 Group: System Environment/Base
 Source0: CentOS-Gluster.repo
@@ -35,5 +35,8 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) /etc/yum.repos.d/*
 
 %changelog
+* Mon Nov 10 2014 Lalatendu Mohanty <lmohanty@redhat.com> - 1-2
+- Fixed the testing repo http path in the repo file
+
 * Wed Oct 15 2014 Karanbir Singh <kbsingh@centos.org> - 1-1
 - Basic setup with the repo files so we can start testing
