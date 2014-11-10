@@ -22,7 +22,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
 # their builds
 [gluster-bsys-test]
 name=CentOS-$releasever - Gluster Testing ( BuildSys )
-baseurl=http://cbs.centos.org/repos/storage$releasever-testing/
+baseurl=http://cbs.centos.org/repos/storage$releasever-testing/$basearch/os/
 gpgcheck=0
 enabled=0
 
